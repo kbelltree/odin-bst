@@ -4,17 +4,17 @@ This project involves the implementation of a Binary Search Tree in JavaScript, 
 
 ## Key Project Instructions:
 
-Remove duplicates and sort the array before creating the BST. 
+Remove duplicates and sort the array before creating the BST.
 
 ### Two Classes or Factory Functions
 
 The project consists of two main components:
 
 - `Node`:<br>
-Consists of data, left child, and right child attributes. 
+  Consists of data, left child, and right child attributes.
 
 - `Tree`:<br>
-Takes an array and stores the BST created from `buildTree` in the root attribute. 
+  Takes an array and stores the BST created from `buildTree` in the root attribute.
 
 ### Methods To Implement
 
@@ -25,42 +25,47 @@ Takes an array and stores the BST created from `buildTree` in the root attribute
   Insert a value. The key is to directly manipulate the BST by traversing it, which should achieve a time efficiency of O(log n).
 
 - `delete(value)`:<br>
-  Delete a value. This operation should consider time efficiency of O(log n) and include several key factors as conditions to achieve deletion. 
+  Delete a value. This operation should consider time efficiency of O(log n) and include several key factors as conditions to achieve deletion.
 
 - `find(value)`:<br>
   Search for and return a node containing the value.
 
 - `levelOrder(callback)`, `inOrder(callback)`, `preOrder(callback)`, `postOrder(callback)`:<br>
   Traverse each node in their distinctive breadth or depth-first orders, like `Array.prototype.forEach`, and apply a callback on each node. This callback takes a node as its parameter. An error should be thrown if no callback is passed.
-  
 - `height(node)`:<br>
   Returns the height of the node passed.
 
 - `depth(node)`:<dr>
-  Returns the depth of the node passed. 
+  Returns the depth of the node passed.
 
 - `isBalanced`:<dr>
-  Inspect if the tree is balanced. 
+  Inspect if the tree is balanced.
 
 - `rebalance`:<br>
-  Fix the unbalanced tree to be balanced. The key is to recreate an array utilizing a traversal method and apply it to `buildTree`. 
+  Fix the unbalanced tree to be balanced. The key is to recreate an array utilizing a traversal method and apply it to `buildTree`.
 
 **[Link to my final solution](./bst.js)**
 
 ### Driver Script
 
-1. Create a BST from an array of numbers less than 100.    
+1. Create a BST from an array of numbers less than 100.
 2. Verify the BST is balanced using `isBalanced`.
-3. Print all elements in level, pre, post, and in orders. 
-4. Add some numbers that are more than 100 to unbalance the tree.  
+3. Print all elements in level, pre, post, and in orders.
+4. Add some numbers that are more than 100 to unbalance the tree.
 5. Verify the BST is unbalanced using `isBalanced`.
-6. Make the BST balanced using `rebalance`. 
+6. Make the BST balanced using `rebalance`.
 7. Verify the BST is balanced using `isBalanced`.
 8. Print all elements in level, pre, post, and in orders.
 
 **[Link to the driver script](./driver.js)**
 
---- 
+## Built With
+
+- JavaScript
+- ESLint
+- Prettier
+
+---
 
 ### Referenced Tutorials
 
